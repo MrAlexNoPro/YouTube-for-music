@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "YouTube for Music",
+    "version": "1.0",
+    "author": "MrAlexNoPro",
+    "homepage_url": "https://github.com/MrAlexNoPro/YouTube-for-music",
+    "description": "Убирает видео и автопаузу на YouTube, оставляя только музыку.|Removes video and auto-pause on YouTube, leaving only audio.",
+    "icons": {
+      "48": "icons/icon.png",
+      "96": "icons/icon.png"
+    },
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "browser_action": {
+      "default_icon": "icons/icon.png",
+      "default_popup": "popup/popup.html",
+      "default_title": "YouTube for Music"
+    },
+    "permissions": ["storage", "activeTab"]
+  }
