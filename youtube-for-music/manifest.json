@@ -6,8 +6,7 @@
     "homepage_url": "https://github.com/MrAlexNoPro/YouTube-for-music",
     "description": "Убирает видео и автопаузу на YouTube, оставляя только музыку.|Removes video and auto-pause on YouTube, leaving only audio.",
     "icons": {
-      "48": "icons/icon.png",
-      "96": "icons/icon.png"
+      "131": "icons/icon.png"
     },
     "background": {
       "scripts": ["background.js"]
